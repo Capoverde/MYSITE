@@ -94,3 +94,24 @@ $z-index: (
     margin: $btnMenuMargin;
     background: $btnMenu-bg;
 }
+
+// --- menu overlay --- //
+@mixin menuOverlay{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: .9;
+    visibility: hidden;
+}
+
+//  --- portrait sizes -- //
+@mixin portrait{
+    width: 250px;
+    height: 250px;
+    border: 4px solid $secondary-c;
+    border-radius: 50%;
+    background-position: 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 50px 15px rgba(0,0,0,.5);
+}
