@@ -1,3 +1,4 @@
+// ----- IMPORTS ----- //
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,500,700,800,900');
 @import "vars";
 @import "reset";
@@ -5,8 +6,11 @@
 @import "functions";
 @import "nav";
 @import "header";
+// -- About -- //
 @import "./About/_footer-about.scss";
 @import './About/_main-about.scss';
+// -- Work -- //
+@import './Work/_main-work.scss';
 
 body {
   @include background;
@@ -43,5 +47,6 @@ main{
   }
 }
 
+// ---- RESPONSIVE IMPORTS ---- //
 @import 'mobile';
 @import './About/_about-mobile.scss'

@@ -243,8 +243,11 @@ a {
 
 .about-info .job {
   background: #303030;
-  border-bottom: 2px solid #ffc600;
-  padding: .5rem;
+  border-bottom: 4px solid #ffc600;
+  padding: 1rem;
+  -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
 }
 
 .about-info .job-1 {
@@ -263,6 +266,23 @@ a {
   -ms-grid-row: 2;
   -ms-grid-column: 3;
   grid-area: job3;
+}
+
+.about-info h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about-info h6 {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #ffc600;
+}
+
+.about-info p {
+  text-align: justify;
 }
 
 body {
