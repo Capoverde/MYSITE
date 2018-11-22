@@ -1,22 +1,26 @@
 
- //---- RESPONSIVNESS ---//
- $breakpoints: (
-    "phone":        400px,
-    "phablet":      560px,
-    "tablet":       768px,
-    "tablet-wide":  1024px,
-    "desktop":      1248px,
-    "desktop-wide": 1440px
-);
-@mixin mq($width, $type: min) {
-    @if map_has_key($breakpoints, $width) {
-        $width: map_get($breakpoints, $width);
-        @if $type == max {
-            $width: $width - 1px;
-        }
-        @media only screen and (#{$type}-width: $width) {
-            @content;
-        }
+ //---- RESPONSIVENESS ---//
+@mixin mediaSm {
+    @media screen and (max-width: 500px){
+        @content;
+    }
+}
+
+@mixin mediaMd {
+    @media screen and (max-width: 768px){
+        @content;
+    }
+}
+
+@mixin mediaLg {
+    @media screen and (min-width: 769px) and (max-width: 1170px){
+        @content;
+    }
+}
+
+@mixin mediaXL {
+    @media screen and (min-width: 1171px){
+        @content;
     }
 }
 
@@ -24,7 +28,7 @@
 $z-index: (
   nav:     2,
   overlay: -1,
-  popup:   300,
+  popup:   4,
   menuBtn: 3
 );
 
