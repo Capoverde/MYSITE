@@ -1,0 +1,8 @@
+
+#main-footer{
+  text-align: center;
+  padding: 1rem;
+  background: darken($primary-c, 10);
+  color: set-text-color($primary-c);
+  height: $footerHeight;
+}

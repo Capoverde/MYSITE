@@ -5,8 +5,8 @@
 @import "functions";
 @import "nav";
 @import "header";
-@import "footer";
-@import 'mobile';
+@import "./About/_footer-about.scss";
+@import './About/_main-about.scss';
 
 body {
   @include background;
@@ -20,7 +20,7 @@ body {
 
 main{
   padding: 4rem;
-  height: 100%;
+  min-height: calc(100vh - 60px);
 
   .icons{
     margin-top: 1rem ;
@@ -42,3 +42,6 @@ main{
     }
   }
 }
+
+@import 'mobile';
+@import './About/_about-mobile.scss'
