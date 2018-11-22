@@ -1,7 +1,39 @@
- @import 'vars';
- @import 'reset';
- @import 'mixins';
- @import 'functions';
- @import 'nav';
- @import 'header';
- @import 'footer'; 
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,500,700,800,900');
+@import "vars";
+@import "reset";
+@import "mixins";
+@import "functions";
+@import "nav";
+@import "header";
+@import "footer";
+
+body {
+  background: $primary-c;
+  color: $h1-c;
+  height: 100%;
+  font-family:'Raleway', Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5;
+}
+
+main{
+  padding: 4rem;
+  height: 100%;
+
+  .icons{
+    margin-top: 1rem ;
+    a{
+      padding: 0.4rem;
+      
+      &:hover{
+        color: $secondary-c;
+        @include easeOut;
+      }
+    }
+  }
+  &#home{
+    overflow: hidden;
+    h1{
+      margin-top: 20vh;
+    }
+  }
+}

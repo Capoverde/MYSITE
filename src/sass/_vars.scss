@@ -1,4 +1,8 @@
-$body-bg: #363636;
- $font-c: #ddd;
- $fz: 1.2em;
- $h1-c:#ffc600;
+// ------ COLORS ------ //
+$primary-c: #444;
+$h1-c: #fff;
+$sm-heading-bg: lighten(#444, 2);
+$links-c: #fff;
+$secondary-c: #ffc600;
+$show-home-img: true;
+$home-img: url('../../dist/assets/img/main_bg/main-large.png');

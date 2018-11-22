@@ -1,0 +1,29 @@
+@import 'vars';
+// --- headings --- //
+
+// --- headings --- //
+
+h1,h2,h3{
+  &.lg-heading{
+    font-size: 6rem;
+  }
+  &.sm-heading{
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(($sm-heading-bg), 0.5);
+  }
+}
+
+a{
+  color: $links-c;
+}
+
+.header{
+  position: fixed;
+  @include z(nav);
+  width: 100%;
+}
+
+.text-secondary{
+  color: $secondary-c;
+}
