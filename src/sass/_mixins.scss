@@ -23,7 +23,7 @@
 //--- Z-INDEX ---//
 $z-index: (
   nav:     2,
-  overlay: 200,
+  overlay: -1,
   popup:   300
 );
 
@@ -55,4 +55,26 @@ $z-index: (
 
 @mixin easeOut {
     transition: all .5s ease-out;
+}
+
+//---- BACKGROUND -----//
+@mixin background{
+     @if $show-home-img{
+         &#bg-img{
+             background: $home-img;
+             background-attachment: fixed;
+             background-size: cover;
+             background-repeat: no-repeat;
+             &::after{
+               content:'';
+               position: absolute;
+               top: 0;
+               right: 0;
+               width: 100%;
+               height: 100%;
+               background: rgba($primary-c,$background-opacity);
+               @include z(overlay);
+            }
+         }
+     }
 }
