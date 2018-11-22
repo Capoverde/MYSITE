@@ -1,7 +1,7 @@
 {
   "name": "mysite",
   "version": "1.0.0",
-  "description": "site_about_me",
+  "description": "my_site_portfolio",
   "main": "main.js",
   "scripts": {
     "start": "babel src/scripts/main.js --watch --out-file dist/scripts/main.js",
@@ -9,10 +9,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/Capoverde/MYSITE.git"
+    "url": "git+https://github.com/Capoverde/MYSITE.git"
   },
   "keywords": [
-    "mysite"
+    "portfolio"
   ],
   "author": "Piotr_As",
   "license": "ISC",

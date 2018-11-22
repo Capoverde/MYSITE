@@ -24,7 +24,8 @@
 $z-index: (
   nav:     2,
   overlay: -1,
-  popup:   300
+  popup:   300,
+  menuBtn: 3
 );
 
 @function z-index($key) {
@@ -77,4 +78,19 @@ $z-index: (
             }
          }
      }
+}
+
+// ----- menuBtn ----- //
+@mixin menuBtnPos{
+    right: $menuBtnRight;
+    top: $menuBtnTop;
+    position: absolute;
+}
+
+// --- menuBtnLines -- //
+@mixin btnLine{
+    width: $btnMenuLineWidth;
+    height: $btnMenuLineHeight;
+    margin: $btnMenuMargin;
+    background: $btnMenu-bg;
 }

@@ -18,6 +18,46 @@ a {
   text-decoration: none;
 }
 
+.menu-btn {
+  right: 35px;
+  top: 35px;
+  position: absolute;
+  z-index: 3;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+  cursor: pointer;
+}
+
+.menu-btn .btn-line {
+  width: 28px;
+  height: 3px;
+  margin: 0 0 5px 0;
+  background: #fff;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+
+.menu-btn.close {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.menu-btn.close .btn-line:nth-child(1) {
+  -webkit-transform: rotate(45deg) translate(5px, 5px);
+          transform: rotate(45deg) translate(5px, 5px);
+  background-color: #ffc600;
+}
+
+.menu-btn.close .btn-line:nth-child(2) {
+  visibility: hidden;
+}
+
+.menu-btn.close .btn-line:nth-child(3) {
+  -webkit-transform: rotate(-45deg) translate(7px, -6px);
+          transform: rotate(-45deg) translate(7px, -6px);
+  background-color: #ffc600;
+}
+
 h1.lg-heading, h2.lg-heading, h3.lg-heading {
   font-size: 6rem;
 }

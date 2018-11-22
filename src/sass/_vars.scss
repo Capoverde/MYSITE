@@ -1,4 +1,4 @@
-// ------ COLORS ------ //
+// ----------------- COLORS ----------------------- //
 $primary-c: #262626;
 $h1-c: #fff;
 $sm-heading-bg: lighten(#444, 2);
@@ -7,3 +7,12 @@ $secondary-c: #ffc600;
 $show-home-img: true;
 $home-img: url('../../dist/assets/img/main_bg/main-large.png');
 $background-opacity: .9;
+
+// ------------------ SIZES --------------------- //
+// --- Menu button -- //
+$menuBtnRight: 35px;
+$menuBtnTop: 35px;
+$btnMenuLineWidth: 28px;
+$btnMenuLineHeight: 3px;
+$btnMenuMargin: 0 0 5px 0;
+$btnMenu-bg: #fff;
