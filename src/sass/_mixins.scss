@@ -96,7 +96,7 @@ $z-index: (
     width: $btnMenuLineWidth;
     height: $btnMenuLineHeight;
     margin: $btnMenuMargin;
-    background: $btnMenu-bg;
+    background: set-text-color($primary-c);
 }
 
 // --- menu overlay --- //

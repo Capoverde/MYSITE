@@ -10,8 +10,10 @@ h1,h2,h3{
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
     background: rgba(($sm-heading-bg), 0.5);
+    width: 45%;
   }
 }
+
 
 a{
   color: $links-c;

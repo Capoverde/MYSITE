@@ -1,0 +1,9 @@
+// ----- CHANGING FONT COLOR FUNCTION ----- //
+
+@function set-text-color($color){
+    @if (lightness($color) > 40){
+      @return #161616;
+    } @else{
+      @return #ffffff;
+    }
+}
