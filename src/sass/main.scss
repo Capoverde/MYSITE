@@ -1,5 +1,7 @@
-// ----- IMPORTS ----- //
+// ----- FONT IMPORTS ----- //
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,500,700,800,900');
+// ------- PAGES IMPORTS ------ //
+// -- index -- //
 @import "vars";
 @import "reset";
 @import "mixins";
@@ -11,6 +13,7 @@
 @import './About/_main-about.scss';
 // -- Work -- //
 @import './Work/_main-work.scss';
+@import './Work/_buttons-work.scss';
 
 body {
   @include background;
@@ -30,23 +33,31 @@ main{
     margin-top: 1rem ;
     a{
       padding: 0.4rem;
-      
+
       &:hover{
         color: $secondary-c;
         @include easeOut;
       }
+
+    .fab{
+      &:hover{
+        @include easeOut;
+        transform: rotateY(360deg);
+      }
+     }
     }
   }
+
   &#home{
     overflow: hidden;
     margin-left: 20%;
     h1{
       margin-top: 20vh;
-      font-weight: 300;
     }
   }
 }
 
 // ---- RESPONSIVE IMPORTS ---- //
 @import 'mobile';
-@import './About/_about-mobile.scss'
+@import './About/_about-mobile.scss';
+@import './Work/_mobile-work.scss';

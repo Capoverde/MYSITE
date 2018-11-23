@@ -1,0 +1,26 @@
+
+    .btn{
+      display: block;
+      padding: .5rem 1rem;
+      border: 0;
+      border-radius: 5px;
+      margin-bottom: .3rem;
+
+      &:hover{
+        background: $secondary-c;
+        color: set-text-color($secondary-c);
+      }
+    }
+
+    .btn-light{
+      @extend .btn;
+      background: lighten($primary-c, 50);
+      color: $btnLight-c;
+    }
+
+    .btn-dark{
+      @extend .btn;
+      background: darken($primary-c, 50);
+      color: $btnDark-c;
+    }
+  

@@ -1,3 +1,11 @@
+#about-bg-img{
+  background-image: $about-img;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:left;
+  background-attachment: fixed;
+}
+
 .about-info{
   display: grid;
   grid-gap: 30px;

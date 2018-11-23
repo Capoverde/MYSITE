@@ -1,15 +1,27 @@
-// ----------------- COLORS ----------------------- //
+// --------------------- COLORS ----------------------- //
 $primary-c: #262626;
 $h1-c: #fff;
 $sm-heading-bg: lighten(#444, 2);
 $links-c: #fff;
 $secondary-c: #ffc600;
+// --- work --- //
+$btnDark-c: #fff;
+$btnLight-c: #333;
+
+
+// -------------- BACKGROUND IMAGES -------------- //
+// --- HOME ---//
 $show-home-img: true;
 $home-img: url('../../dist/assets/img/main_bg/main-large.png');
 $home-img-md: url('../../dist/assets/img/main_bg/main-m.png');
 $home-img-sm: url('../../dist/assets/img/main_bg/main-sm.png');
 $background-opacity: .9;
+// ---- WORK --- //
+$work-img: url('../../dist/assets/img/work_bg/work-bg.png');
 $portrait: url('../../dist/assets/img/portrait-onsite.png');
+// --- ABOUT --- //
+$about-img: url('../../dist/assets/img/rest_bg/rest-medium.png');
+
 
 // ------------------ SIZES --------------------- //
 // --- Menu button -- //

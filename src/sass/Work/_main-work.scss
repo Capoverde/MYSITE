@@ -1,0 +1,31 @@
+#work-bg-img{
+  background-image: $work-img;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-attachment: fixed;
+}
+
+.projects{
+  display: grid;
+  grid-gap: .7rem;
+  grid-template-columns: repeat(3, 1fr);
+
+  img{
+    width: 100%;
+    border: 2px solid $secondary-c;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 0px 50px 12px rgba(0,0,0,0.75);
+
+    &:hover{
+      border-color: $secondary-c;
+      filter: brightness(60%);
+      @include easeOut;
+      transform: scale(1.2);
+    }
+  }
+}
+
+
+

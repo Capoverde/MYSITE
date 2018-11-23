@@ -1,0 +1,23 @@
+@include mediaXL{
+  .projects{
+    grid-auto-columns: repeat(4, 1fr);
+  }
+}
+
+@include mediaLg{
+  .projects{
+    grid-auto-columns: repeat(3, 1fr);
+  }
+}
+
+@include mediaMd{
+  .projects{
+    grid-auto-columns: repeat(2, 1fr);
+  }
+}
+
+@include mediaSm{
+  .projects{
+    grid-auto-columns: 1fr;
+  }
+}
