@@ -14,6 +14,8 @@
 // -- Work -- //
 @import './Work/_main-work.scss';
 @import './Work/_buttons-work.scss';
+// -- Contact -- //
+@import './Contact/_contact.scss';
 
 body {
   @include background;
@@ -61,3 +63,4 @@ main{
 @import 'mobile';
 @import './About/_about-mobile.scss';
 @import './Work/_mobile-work.scss';
+@import './Contact/_contact.scss';
