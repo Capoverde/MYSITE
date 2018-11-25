@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>About Me</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link
       rel="stylesheet"
@@ -46,25 +47,25 @@
        </h2>
        <!-- About info -->
        <div class="about-info">
-         <img src="../assets/img/portrait-onsite.png" alt="This soposed to be Me" class="bio-img">
-         <div class="bio">
+         <img src="../assets/img/portrait-onsite.png" alt="This soposed to be Me" class="bio-img" data-aos="fade-right" data-aos-duration="1000">
+         <div class="bio" data-aos="fade-left" data-aos-duration="1000">
            <h3 class="text-secondary">BIO </h3>
            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, ut sapiente architecto in repellendus ratione, aliquid est porro omnis saepe magnam nobis temporibus quisquam nulla voluptatibus veritatis autem non asperiores!</p>
          </div>
 
-         <div class="job job-1">
+         <div class="job job-1" data-aos="fade-right" data-aos-duration="1000">
            <h3>123 webshop</h3>
            <h6>front end</h6>
            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis nemo optio, est ratione asperiores adipisci dolores voluptas expedita ullam totam quas animi at nulla aperiam, reiciendis quo reprehenderit dicta eum?Assumenda enim facere vitae aliquid porro debitis iusto dolorem maxime minus, consectetur a, laborum explicabo magni velit esse nobis non dolores rerum error ipsum. Beatae voluptatem asperiores aperiam non nesciunt.</p>
          </div>
 
-         <div class="job job-2">
+         <div class="job job-2" data-aos="fade-up" data-aos-duration="1000">
             <h3>Designers ABC</h3>
             <h6>full stack</h6>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis nemo optio, est ratione asperiores adipisci dolores voluptas expedita ullam totam quas animi at nulla aperiam, reiciendis quo reprehenderit dicta eum?Assumenda enim facere vitae aliquid porro debitis iusto dolorem maxime minus, consectetur a, laborum explicabo magni velit esse nobis non dolores rerum error ipsum. Beatae voluptatem asperiores aperiam non nesciunt.</p>
           </div>
 
-          <div class="job job-3">
+          <div class="job job-3" data-aos="fade-left" data-aos-duration="1000">
               <h3>Airplane Pilot </h3>
               <h6>Lufthansa</h6>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis nemo optio, est ratione asperiores adipisci dolores voluptas expedita ullam totam quas animi at nulla aperiam, reiciendis quo reprehenderit dicta eum?Assumenda enim facere vitae aliquid porro debitis iusto dolorem maxime minus, consectetur a, laborum explicabo magni velit esse nobis non dolores rerum error ipsum. Beatae voluptatem asperiores aperiam non nesciunt.</p>
@@ -79,6 +80,10 @@
 
 
     <!-- SCRIPTS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="../scripts/main.js"></script>
   </body>
 </html>

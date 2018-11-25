@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400|Muli:200,300,400');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400');
+@import url('https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i');
+@import 'vars';
+@import 'reset';
+@import 'mixins';
+
+
+body{
+  background: $body-bg;
+  color: $primary-c;
+}
+
+.thx{
+  position: relative;
+  margin: 200px auto;
+  width: 600px;
+  height: 300px;
+  box-shadow: 0 0 80px 10px rgba($color: #000000, $alpha: 1.0);
+  background: #000;
+  background-image: url('../../assets/img/thank-you.png');
+  background-repeat: no-repeat;
+  background-position: 340px -25px;
+  background-size: cover;
+
+  .thx__container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 550px;
+    height: 250px;
+    border: 1px solid $primary-c;
+  }
+
+  h3{
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 0;
+    font-family: 'Anton';
+    font-size: 2.3rem;
+
+    .span{
+      color: $secondary-c;
+    }
+  }
+
+  hr{
+    width: 40%;
+    border-color:$secondary-c ;
+  }
+
+  h5{
+    margin-top: 0;
+    text-align: center;
+    font-family: 'Muli';
+    font-weight: 100;
+    letter-spacing: 4px;
+  }
+
+
+  h4{
+    text-align: center;
+    line-height: 50px;
+    font-family: 'Muli';
+    font-size: 2rem;
+    font-weight: 100;
+
+    .span{
+      @extend .span;
+    }
+  }
+}

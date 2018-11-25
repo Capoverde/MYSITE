@@ -1,7 +1,8 @@
 // --------------------- COLORS ----------------------- //
-$primary-c: #262626;
+$primary-c: #161616;
 $h1-c: #fff;
 $sm-heading-bg: lighten(#444, 2);
+$paragraph-c: rgb(116, 116, 116);
 $links-c: #fff;
 $secondary-c: #ffc600;
 // --- work --- //
@@ -9,13 +10,13 @@ $btnDark-c: #fff;
 $btnLight-c: #333;
 // --- contact --- //
 $btnSend-bg: transparent;
-// -------------- BACKGROUND IMAGES -------------- //
+// -------------- BACKGROUNDS & BACKGROUND IMAGES -------------- //
 // --- HOME ---//
 $show-home-img: true;
 $home-img: url('../../dist/assets/img/main_bg/main-large.png');
 $home-img-md: url('../../dist/assets/img/main_bg/main-m.png');
 $home-img-sm: url('../../dist/assets/img/main_bg/main-sm.png');
-$background-opacity: .9;
+$background-opacity: .5;
 // ---- WORK --- //
 $work-img: url('../../dist/assets/img/work_bg/work-bg.png');
 $portrait: url('../../dist/assets/img/portrait-onsite.png');
@@ -23,6 +24,8 @@ $portrait: url('../../dist/assets/img/portrait-onsite.png');
 $about-img: url('../../dist/assets/img/rest_bg/rest-medium.png');
 // --- CONTACT --- //
 $contact-img: url('../../dist/assets/img/cntact_bg/contact-large.png');
+$rodo-bg: rgba(0, 0, 0, 0.76);
+$rodo-paragraph: rgb(155, 155, 155);
 // ------------------ SIZES --------------------- //
 // --- Menu button -- //
 $menuBtnRight: 35px;
