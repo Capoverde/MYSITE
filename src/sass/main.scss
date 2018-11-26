@@ -61,6 +61,27 @@ main{
   }
 }
 
+.socials{
+  
+   position: absolute;
+   bottom: 10%;
+   left: 5%; 
+   transform: translate(-50%, -50%);
+
+   .fa-facebook,
+   .fa-twitter{
+     color: $socials-c;
+     font-size: 1.2rem;
+     padding: 5px;
+
+     &:hover{
+      @include iconsHover;
+      color: $secondary-c;
+    }
+   
+   }
+}
+
 // ---- RESPONSIVE IMPORTS ---- //
 @import 'mobile';
 @import './About/_about-mobile.scss';
