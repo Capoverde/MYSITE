@@ -1,5 +1,6 @@
 // ----- FONT IMPORTS ----- //
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,500,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Anton&subset=latin-ext');
 // ------- PAGES IMPORTS ------ //
 // -- index -- //
 @import "vars";
@@ -16,6 +17,8 @@
 @import './Work/_buttons-work.scss';
 // -- Contact -- //
 @import './Contact/_contact.scss';
+@import './Contact/_contact-card.scss';
+
 
 body {
   @include background;
@@ -28,7 +31,7 @@ body {
 }
 
 main{
-  padding: 4rem;
+  padding: 1rem 4rem;
   min-height: calc(100vh - 60px);
 
   .icons{

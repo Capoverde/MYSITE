@@ -34,3 +34,29 @@ function toggleMenu() {
 // ---- eventListeners --- //
 
 menuBtn.addEventListener('click', toggleMenu);
+
+// ---- CONTACT CARD ---- //
+const card = document.querySelector('.card');
+const trigger = document.getElementById('send__message-trigger');
+const send = document.getElementById('send__message');
+const thanks = document.querySelector('.thank__you__card');
+
+function cardSlide() {
+  card.classList.add('show-card');
+}
+
+function sendMessage(e, thanksRemover) {
+  e.preventDefault();
+  card.classList.remove('show-card');
+  thanks.classList.add('showThx');
+
+  function thanksRemover() {
+    thanks.classList.remove('showTHx');
+    thanks.classList.add('thanksUp');
+  }
+
+  setTimeout(thanksRemover, 3000);
+}
+
+trigger.addEventListener('click', cardSlide);
+send.addEventListener('click', sendMessage);

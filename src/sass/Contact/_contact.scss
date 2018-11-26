@@ -1,4 +1,8 @@
 #contact-bg-img{
+  overflow: hidden;
+}
+
+#contact-bg-img{
   background-image: $contact-img;
   background-repeat: no-repeat;
   background-size: cover;
@@ -26,6 +30,7 @@
   float: left;
   width: 100%;
   height: 100vh;
+  overflow: hidden;
 
   .contact-box{
     width: 50%;
@@ -58,7 +63,7 @@
     } 
   }
 
-  #send-message{
+  #send__message-trigger{
     background: transparent;
     padding: 10px;
     color: $secondary-c;
