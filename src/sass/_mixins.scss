@@ -62,6 +62,12 @@ $z-index: (
     transition: all .5s ease-out;
 }
 
+// --- ICONS --- //
+@mixin iconsHover{
+    transition: all .3s ease-out;
+    transform: rotateY(360deg);
+}
+
 //---- BACKGROUND -----//
 @mixin background{
      @if $show-home-img{

@@ -20,6 +20,13 @@ a{
   color: $links-c;
 }
 
+
+.menu-word{
+  margin: 30px 80px;
+  float: right;
+  font-size: 1.3rem;
+}
+
 .header{
   position: fixed;
   @include z(nav);

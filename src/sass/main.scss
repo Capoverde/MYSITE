@@ -46,8 +46,7 @@ main{
 
     .fab{
       &:hover{
-        @include easeOut;
-        transform: rotateY(360deg);
+       @include iconsHover;
       }
      }
     }

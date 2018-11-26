@@ -33,6 +33,26 @@
   }
 }
 
+.lang-switch{
+  position: absolute;
+  top: 50%;
+  left: 5%; 
+  transform: translate(-50%, -50%);
+
+  #gb{
+    padding: 0;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+
+    
+  &:hover{
+    @include easeOut;
+    background: lighten($secondary-c, 5);
+  }
+  }
+}
+
 // ---- MENU OVERLAY ---- //
 
 .menu{
@@ -41,6 +61,8 @@
   &.show{
     visibility: visible;
   }
+  
+
  
   &-branding,
   &-nav{
