@@ -62,10 +62,10 @@ main{
 }
 
 .socials{
-  
+
    position: absolute;
    bottom: 10%;
-   left: 5%; 
+   left: 5%;
    transform: translate(-50%, -50%);
 
    .fa-facebook,
@@ -78,7 +78,6 @@ main{
       @include iconsHover;
       color: $secondary-c;
     }
-   
    }
 }
 
@@ -86,4 +85,4 @@ main{
 @import 'mobile';
 @import './About/_about-mobile.scss';
 @import './Work/_mobile-work.scss';
-@import './Contact/_contact.scss';
+// @import './Contact/_contact.scss';
