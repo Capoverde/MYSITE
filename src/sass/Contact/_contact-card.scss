@@ -42,6 +42,7 @@
  }
 
  .card__front{
+   transform: rotateY(-.5turn);
    background-image: url('../../assets/img/bricks-1.jpg');
    background-size: cover;
    background-repeat: no-repeat;
@@ -49,7 +50,6 @@
  }
 
  .card__back{
-   transform: rotateY(-.5turn);
    background-image: url('../../assets/img/bricks-1.jpg');
    background-size: cover;
    background-repeat: no-repeat;
